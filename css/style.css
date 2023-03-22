@@ -3,6 +3,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.flex-space-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header{
     width: 100%;
     background-color: #FFFFFF;
@@ -162,18 +168,310 @@ input::placeholder{
 
 
 .posts{
-    background-color: orange;
     width: 100%;
-    height: 100px;
+    height: 800px;
 }
+
+.posts article{
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.post-header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-header img{
+    width: 32px;
+    height: 32px;
+}
+
+.post-header p{
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 15px;
+
+}
+
+article hr{
+    border: 0;
+	border-top: 1px solid #DBDBDB;
+}
+article img{
+    width: 100%;
+    height: 612px;
+}
+
+article video{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.post-icons div{
+    margin-left: 18px;
+}
+
+.bottoms ion-icon:nth-child(2){
+    margin-left: 18px;
+}
+
+.bottoms ion-icon:nth-child(3){
+    margin-left: 18px;
+}
+
+.post-icons > ion-icon{
+    margin-right: 18px;
+}
+
+.posts footer{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 13px;
+}
+
+.posts footer p{
+    margin-left: 5px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.negrito {
+    font-weight: bold;
+   }
+
+.posts footer img{
+    width: 25px;
+    height: 25px;
+}
+
+.post-description{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-left: 10px;
+
+}
+
+.comment-users{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left:17px;
+}
+
+.post-description p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments > p{
+    color: #8E8E8E;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left:25px;
+    cursor: pointer;
+}
+
+.main-comments{
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    position: relative;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.comment p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.likes{
+    position: absolute;
+    right: 36px;
+}
+.likes ion-icon{
+    font-size: 16px;
+}
+
+@media(max-width:935px){
+    /* sidebar{
+        display: none;
+    } */
+
+    .content{
+        background-color: red;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
 sidebar{
     background-color: pink;
-    width: 321px;
-    height: 800px;
+    width: 293px;
+    transform: translateX(220%);
+    position: fixed;
+    background-color: #FAFAFA;
 }
+
+.sidebar-users-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+}
+
+.sidebar-header img{
+    width: 56px;
+    height: 56px;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    margin-right: 17px;
+}
+
+.sidebar-header div p:nth-child(1){
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.sidebar-header div p:nth-child(2){
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E8E8E;
+    cursor: pointer;
+}
+
+.sidebar-area-sugestion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.suggestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.suggestion p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.suggestion :nth-child(1){
+    color: #8E8E8E;
+}
+
+.suggestion :nth-child(2){
+    color: #262626;
+}
+
+.sidebar-accounts-suggestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-account, .account{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-account{
+    margin-bottom: 16px;
+}
+
+.sidebar-account img{
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.sidebar-account div p:nth-child(1){
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.sidebar-account div p:nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color:#8E8E8E;
+}
+
+.sidebar-account :last-child{
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 
 
